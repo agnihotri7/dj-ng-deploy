@@ -2,14 +2,13 @@
 echo "Reading configurations ..."
 source ./config/server.conf
 
-PROJ_ROOT="/home/$USERNAME/$PROJECT_NAME.com"
 PROJ_DIR="/home/$USERNAME/$PROJECT_NAME.com/$USERNAME"
 
 echo "update system ..."
-# apt-get update
+apt-get update
 
 echo "install requirements ..."
-# apt-get install git gcc python-dev python-setuptools python-virtualenv libjpeg-dev zlib1g-dev libpq-dev nginx supervisor postgresql postgresql-contrib
+apt-get install git gcc python-dev python-setuptools python-virtualenv libjpeg-dev zlib1g-dev libpq-dev nginx supervisor
 
 echo "add supervisor.conf ..."
 cp "$PROJ_DIR"/config/supervisor/"$PROJECT_NAME".conf /etc/supervisor/conf.d/"$PROJECT_NAME".conf

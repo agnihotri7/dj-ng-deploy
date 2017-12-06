@@ -2,7 +2,6 @@
 echo "Reading configurations ..."
 source ./config/server.conf
 
-PROJ_ROOT="/home/$USERNAME/$PROJECT_NAME.com"
 PROJ_DIR="/home/$USERNAME/$PROJECT_NAME.com/$USERNAME"
 
 cd $PROJ_DIR
