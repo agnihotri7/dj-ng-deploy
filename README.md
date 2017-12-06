@@ -13,7 +13,8 @@ This project is build to deploy your Django project over Ubuntu using Nginx + Gu
 ## Configure It
 
     # update configurations in server.conf file
-    vi server.conf
+    cd dj-ng-deploy
+    vi config/server.conf
 
 ## Run Scripts
 
